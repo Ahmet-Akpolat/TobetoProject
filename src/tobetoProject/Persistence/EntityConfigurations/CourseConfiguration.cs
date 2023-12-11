@@ -16,7 +16,6 @@ public class CourseConfiguration : IEntityTypeConfiguration<Course>
         builder.Property(c => c.Like).HasColumnName("Like");
         builder.Property(c => c.StartDate).HasColumnName("StartDate");
         builder.Property(c => c.EndDate).HasColumnName("EndDate");
-        builder.Property(c => c.Manufacturer).HasColumnName("Manufacturer");
         builder.Property(c => c.CreatedDate).HasColumnName("CreatedDate").IsRequired();
         builder.Property(c => c.UpdatedDate).HasColumnName("UpdatedDate");
         builder.Property(c => c.DeletedDate).HasColumnName("DeletedDate");
